@@ -1,0 +1,90 @@
+.vendors-page {
+  padding: 40px 0;
+}
+
+.vendors-page h1 {
+  margin-bottom: 30px;
+  color: #2d3748;
+}
+
+.vendors-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.filters-sidebar {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+  position: sticky;
+  top: 100px;
+}
+
+.filters-sidebar h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #2d3748;
+}
+
+.filter-group {
+  margin-bottom: 20px;
+}
+
+.filter-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #4a5568;
+}
+
+.filter-group input,
+.filter-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cbd5e0;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.filter-group input:focus,
+.filter-group select:focus {
+  outline: none;
+  border-color: #8b5cf6;
+}
+
+.vendors-content {
+  min-height: 400px;
+}
+
+.results-info {
+  margin-bottom: 20px;
+  color: #718096;
+}
+
+.no-results {
+  text-align: center;
+  padding: 60px 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.no-results p {
+  font-size: 18px;
+  color: #718096;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 968px) {
+  .vendors-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .filters-sidebar {
+    position: static;
+  }
+}
